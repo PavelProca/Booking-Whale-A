@@ -2,7 +2,9 @@
 <html>
 <head>
 	<script defer="defer" type="text/javascript" src="scripts/jquery-3.1.1.min.js" defer></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<script defer="defer" type="text/javascript" src="scripts/script.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="style-2.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>Booking Whale</title>
@@ -265,7 +267,7 @@
 						<div class="chose-day veh-type">
 							<div class="day-wrap">
 								<input type="radio" name="day-radio" id="" class="type-block">
-								<label for="" class="day">
+								<label for="" class="day type-label">
 									<span class="veh-bg"></span>
 									<p>Sedan</p>
 									<select class="qty">
@@ -278,7 +280,7 @@
 							</div>
 							<div class="day-wrap">
 								<input type="radio" name="day-radio" id="" class="type-block">
-								<label for="" class="day">
+								<label for="" class="day type-label">
 									<span class="veh-bg"></span>
 									<p>SUV/Van</p>
 									<select class="qty">
@@ -291,7 +293,7 @@
 							</div>
 							<div class="day-wrap">
 								<input type="radio" name="day-radio" id="" class="type-block">
-								<label for="" class="day">
+								<label for="" class="day type-label">
 									<span class="veh-bg"></span>
 									<p>Truck</p>
 									<select class="qty">
@@ -304,6 +306,178 @@
 							</div>
 						</div>
 						<div class="clear-fix"></div>
+						<!-- ================================ PACKAGES ================================ -->
+						<div class="service-wrap">
+							<h2>Packages</h2>
+							<p>Which wash is the best for your vehicle?</p>
+							<div class="chose-day car-wash">
+								<div class="day-wrap wash-item">
+									<input type="radio" name="day-radio1" id="" checked class="package-input">
+									<label for="" class="day package-label">
+									<div>
+										<div>
+											<h3>BIO-EXTERIOR</h3>
+											<h1>$49<sup>99</sup></h1>
+										</div>
+
+										<div class="tk-time">
+										<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+		    								<path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+		    								<path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+										</svg>
+										25 min
+									</div>
+
+										<div>
+											<span class="details" onclick="details(1)">Details...</span>
+											<ul>
+												<li>Body washed &#38; waxed</li>
+												<li>Exterior windows, mirrors, &#38; windshield wipers cleaned</li>
+												<li>Tires and rims washed and dressed</li>
+											</ul>
+										</div>
+									</div>
+									</label>
+								</div>
+								<div class="day-wrap wash-item">
+									<input type="radio" name="day-radio1" id="" class="package-input">
+									<label for="" class="day package-label">
+									<div>
+										<div>
+											<h3>BIO-COMPLETE</h3>
+											<h1>$49<sup>99</sup></h1>
+										</div>
+
+										<div class="tk-time">
+										<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+		    								<path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+		    								<path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+										</svg>
+										45 min
+									</div>
+
+										<div>
+											<span class="details" onclick="details(2)">Details...</span>
+											<ul>
+												<li>All of Bio-Exterior Package</li>
+												<li>Trunk vacuum and wipe</li>
+												<li>Interior wiping, vacuuming and sanitization</li>
+											</ul>
+										</div>
+									</div>
+									</label>
+								</div>
+								<div class="day-wrap wash-item">
+									<input type="radio" name="day-radio1" id="" class="package-input">
+									<label for="" class="day package-label">
+									<div>
+										<div>
+											<h3>BIO-elite</h3>
+											<h1>$49<sup>99</sup></h1>
+										</div>
+
+										<div class="tk-time">
+										<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+		    								<path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+		    								<path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+										</svg>
+										60 min
+									</div>
+
+										<div>
+											<span class="details" onclick="details(3)">Details...</span>
+											<ul>
+												<li>All of Bio-Complete Package</li>
+												<li>Organic “Carnauba” wax</li>
+												<li>Leather seats conditioning</li>
+											</ul>
+										</div>
+									</div>
+									</label>
+								</div>
+							</div>
+						</div>
+						<!-- ================================ END OF PACKAGES ================================ -->
+						<!-- ================================ ADDONS ================================ -->
+						<div class="service-wrap">
+							<h2>Extras</h2>
+							<p>Add more to your carwash to get the best results</p>
+							<div class="add-ons">
+								<label for="" class="switcher">
+								<div class="add-content">
+									<div>
+										Tires and rims washed and dressed
+									</div>
+									<div class="time-money">
+										<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+		    								<path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+		    								<path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+										</svg>
+										5 min
+									</div>
+									<div class="time-money">
+										$2.50
+									</div>
+									<div class="adds">
+										<input type="checkbox" id="" class="add-input" />
+		      							<label for="" class="switcher-2"></label>
+		      							<div class="clear-fix"></div>
+									</div>
+								</div>
+								</label>
+								<label for="" class="switcher">
+								<div class="add-content">
+									<div>
+										Exterior windows, mirrors, &#38; windshield wipers cleaned<span class="more" onclick="more(1)">More...</span>
+										<p class="hidden-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+									</div>
+									<div class="time-money">
+										<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+		    								<path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+		    								<path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+										</svg>
+										5 min
+									</div>
+									<div class="time-money">
+										$2.50
+									</div>
+									<div class="adds">
+										<input type="checkbox" id="" class="add-input"/>
+		      							<label for="" class="switcher-2"></label>
+		      							<div class="clear-fix"></div>
+									</div>
+								</div>
+								</label>
+								<label for="" class="switcher">
+								<div class="add-content">
+									<div>
+										Pet hair removal<span class="more" onclick="more(2)">More...</span>
+										<p class="hidden-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+									</div>
+									<div class="time-money">
+										<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+		    								<path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+		    								<path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+										</svg>
+										5 min
+									</div>
+									<div class="time-money">
+										$2.50
+									</div>
+									<div class="adds">
+										<input type="checkbox" id="" class="add-input" />
+		      							<label for="switch_3_top" class="switcher-2"></label>
+		      							<div class="clear-fix"></div>
+									</div>
+								</div>
+								</label>
+							</div>
+						</div>
+						<!-- ================================ END OF ADDONS ================================ -->
 						<!-- ====== MORE INFO ======-->
 						<div>
 							<form id="more-info">
@@ -321,6 +495,7 @@
 								</div>
 							</form>
 						</div>
+						<div class="close">X Remove</div>
 					</div>
 					<!-- =============== END OF CLONE BLOCK =============== -->
 					<div class="info">
@@ -328,8 +503,8 @@
 						<h2>What vehicle will we clean?</h2>
 						<div class="chose-day veh-type">
 							<div class="day-wrap">
-								<input type="radio" name="day-radio" id="mradio-1" class="type-block">
-								<label for="mradio-1" class="day">
+								<input type="radio" name="day-radio" id="mradio-1" class="type-block" checked>
+								<label for="mradio-1" class="day type-label">
 									<span class="veh-bg"></span>
 									<p>Sedan</p>
 									<select class="qty">
@@ -342,7 +517,7 @@
 							</div>
 							<div class="day-wrap">
 								<input type="radio" name="day-radio" id="mradio-2" class="type-block">
-								<label for="mradio-2" class="day">
+								<label for="mradio-2" class="day type-label">
 									<span class="veh-bg"></span>
 									<p>SUV/Van</p>
 									<select class="qty">
@@ -355,7 +530,7 @@
 							</div>
 							<div class="day-wrap">
 								<input type="radio" name="day-radio" id="mradio-3" class="type-block">
-								<label for="mradio-3" class="day">
+								<label for="mradio-3" class="day type-label">
 									<span class="veh-bg"></span>
 									<p>Truck</p>
 									<select class="qty">
@@ -368,6 +543,178 @@
 							</div>
 						</div>
 						<div class="clear-fix"></div>
+						<!-- ================================ PACKAGES ================================ -->
+						<div class="service-wrap">
+							<h2>Packages</h2>
+							<p>Which wash is the best for your vehicle?</p>
+							<div class="chose-day car-wash">
+								<div class="day-wrap wash-item">
+									<input type="radio" name="day-radio1" id="dradio-1" checked class="package-input">
+									<label for="dradio-1" class="day package-label">
+									<div>
+										<div>
+											<h3>BIO-EXTERIOR</h3>
+											<h1>$49<sup>99</sup></h1>
+										</div>
+
+										<div class="tk-time">
+										<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+		    								<path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+		    								<path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+										</svg>
+										25 min
+									</div>
+
+										<div>
+											<span class="details" onclick="details(1)">Details...</span>
+											<ul>
+												<li>Body washed &#38; waxed</li>
+												<li>Exterior windows, mirrors, &#38; windshield wipers cleaned</li>
+												<li>Tires and rims washed and dressed</li>
+											</ul>
+										</div>
+									</div>
+									</label>
+								</div>
+								<div class="day-wrap wash-item">
+									<input type="radio" name="day-radio1" id="dradio-2" class="package-input">
+									<label for="dradio-2" class="day package-label">
+									<div>
+										<div>
+											<h3>BIO-COMPLETE</h3>
+											<h1>$49<sup>99</sup></h1>
+										</div>
+
+										<div class="tk-time">
+										<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+		    								<path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+		    								<path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+										</svg>
+										45 min
+									</div>
+
+										<div>
+											<span class="details" onclick="details(2)">Details...</span>
+											<ul>
+												<li>All of Bio-Exterior Package</li>
+												<li>Trunk vacuum and wipe</li>
+												<li>Interior wiping, vacuuming and sanitization</li>
+											</ul>
+										</div>
+									</div>
+									</label>
+								</div>
+								<div class="day-wrap wash-item">
+									<input type="radio" name="day-radio1" id="dradio-3" class="package-input">
+									<label for="dradio-3" class="day package-label">
+									<div>
+										<div>
+											<h3>BIO-elite</h3>
+											<h1>$49<sup>99</sup></h1>
+										</div>
+
+										<div class="tk-time">
+										<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+		    								<path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+		    								<path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+										</svg>
+										60 min
+									</div>
+
+										<div>
+											<span class="details" onclick="details(3)">Details...</span>
+											<ul>
+												<li>All of Bio-Complete Package</li>
+												<li>Organic “Carnauba” wax</li>
+												<li>Leather seats conditioning</li>
+											</ul>
+										</div>
+									</div>
+									</label>
+								</div>
+							</div>
+						</div>
+						<!-- ================================ END OF PACKAGES ================================ -->
+						<!-- ================================ ADDONS ================================ -->
+						<div class="service-wrap">
+							<h2>Extras</h2>
+							<p>Add more to your carwash to get the best results</p>
+							<div class="add-ons">
+								<label for="switch_1_top" class="switcher">
+								<div class="add-content">
+									<div>
+										Tires and rims washed and dressed
+									</div>
+									<div class="time-money">
+										<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+		    								<path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+		    								<path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+										</svg>
+										5 min
+									</div>
+									<div class="time-money">
+										$2.50
+									</div>
+									<div class="adds">
+										<input type="checkbox" id="switch_1_top" class="add-input" />
+		      							<label for="switch_1_top" class="switcher-2"></label>
+		      							<div class="clear-fix"></div>
+									</div>
+								</div>
+								</label>
+								<label for="switch_2_top" class="switcher">
+								<div class="add-content">
+									<div>
+										Exterior windows, mirrors, &#38; windshield wipers cleaned<span class="more" onclick="more(1)">More...</span>
+										<p class="hidden-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+									</div>
+									<div class="time-money">
+										<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+		    								<path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+		    								<path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+										</svg>
+										5 min
+									</div>
+									<div class="time-money">
+										$2.50
+									</div>
+									<div class="adds">
+										<input type="checkbox" id="switch_2_top" class="add-input" />
+		      							<label for="switch_2_top" class="switcher-2"></label>
+		      							<div class="clear-fix"></div>
+									</div>
+								</div>
+								</label>
+								<label for="switch_3_top" class="switcher">
+								<div class="add-content">
+									<div>
+										Pet hair removal<span class="more" onclick="more(2)">More...</span>
+										<p class="hidden-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+									</div>
+									<div class="time-money">
+										<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+		    								<path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+		    								<path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+										</svg>
+										5 min
+									</div>
+									<div class="time-money">
+										$2.50
+									</div>
+									<div class="adds">
+										<input type="checkbox" id="switch_3_top" class="add-input" />
+		      							<label for="switch_3_top" class="switcher-2"></label>
+		      							<div class="clear-fix"></div>
+									</div>
+								</div>
+								</label>
+							</div>
+						</div>
+						<!-- ================================ END OF ADDONS ================================ -->
 						<!-- ====== MORE INFO ======-->
 						<div>
 							<form id="more-info">
@@ -385,6 +732,7 @@
 								</div>
 							</form>
 						</div>
+						<div class="close">X Remove</div>
 					</div>
 				</div>
 				<div class="buttons">
@@ -422,18 +770,18 @@
 		var cloneBlock = $('#clone').clone(); // clone block
 		$(cloneBlock).removeClass('hidden'); // remove hidden class
 		cloneBlock.appendTo(".info-wrapper"); // insert cloned block
-		// set the right ID to all elements
+		// set ID to all vehicle-type elements
 		debugger;
-		var counter = 0;
+		var counter1 = 0;
 		var child1 = document.getElementsByClassName("type-block");
-		var child2 = document.getElementsByClassName("day");
+		var child2 = document.getElementsByClassName("type-label");
 		for (var i = 0; i < child1.length; i++) {
-			child1[i].id = 'mradio-' + counter;
-			child2[i].setAttribute("for", 'mradio-' + counter);
-			counter = counter + 1;
+			child1[i].id = 'mradio-' + counter1;
+			child2[i].setAttribute("for", 'mradio-' + counter1);
+			counter1 = counter1 + 1;
 		}
 		// set different block names
-		var blocks = document.getElementsByClassName("chose-day");
+		var blocks = document.getElementsByClassName("veh-type");
 		var counter2 = 0;
 		for (var i = 0; i < blocks.length; i++) {
 			for (var z = 0; z < blocks[i].children.length; z++) {
@@ -441,7 +789,65 @@
 			}
 			counter2 = counter2 + 1;
 		}
+		// set ID to all package elements
+		var counter6 = 0;
+		var packageInput = document.getElementsByClassName("package-input");
+		var packageLabel = document.getElementsByClassName("package-label");
+		for (var i = 0; i < packageInput.length; i++) {
+			packageInput[i].id = 'package-radio-' + counter6;
+			packageLabel[i].setAttribute("for", 'package-radio-' + counter6);
+			counter6 = counter6 + 1;
+		}
+		// set different package-blocks names
+		var packageBlocks = document.getElementsByClassName("car-wash");
+		var counter7 = 0;
+		for (var i = 0; i < packageBlocks.length; i++) {
+			for (var z = 0; z < packageBlocks[i].children.length; z++) {
+				packageBlocks[i].children[z].children[0].name = "package-radio" + counter7;
+			}
+			counter7 = counter7 + 1;
+		}
+		// set ID to all addon elemetns
+		var counter3 = 0;
+		var addInput = document.getElementsByClassName("add-input");
+		var addLabel = document.getElementsByClassName("switcher");
+		var addLabel2 = document.getElementsByClassName("switcher-2");
+		for (var i = 0; i < addInput.length; i++) {
+			addInput[i].id = 'addon-' + counter3;
+			addLabel[i].setAttribute("for", 'addon-' + counter3);
+			addLabel2[i].setAttribute("for", 'addon-' + counter3);
+			counter3 = counter3 + 1;
+		}
+		// show close buttons
+		var closeButtons = document.getElementsByClassName("close");
+		if (blocks.length > 2) {
+			for (var i = 0; i < closeButtons.length; i++) {
+				closeButtons[i].style.display = "block";
+			}
+		}
+		// add close function to all close buttons
+		$(".close").click(function(event) {
+			var asd = event.target.parentElement;
+			asd.remove();
+			// hide close buttons
+			closeButtons = document.getElementsByClassName("close");
+			if (blocks.length <= 2) {
+				closeButtons[1].style.display = "none";
+			}
+		});
+		// active state for addons 
+		$(".add-input").click(function(event) {
+			debugger;
+			var addOn = event.target.parentElement.parentElement;
+			addOn.classList.toggle("active");
+		});
 	}
+	// active state for addons 
+	$(".add-input").click(function(event) {
+		debugger;
+		var addOn = event.target.parentElement.parentElement;
+		addOn.classList.toggle("active");
+	});
 </script>
 </html>
 
